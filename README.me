@@ -1,0 +1,161 @@
+# SpendWise - Week 6 Interactive Budget Tracker
+
+## Project Description
+
+**SpendWise** is a personal budgeting application designed to help users manage their budgets, record expenses, and monitor their remaining balance.
+
+Building on the Week 5 JavaScript foundation, Week 6 transforms SpendWise from a basic calculation program into an interactive web application using JavaScript, HTML, and CSS.
+
+Users can add expenses, view budget categories, track spending, search transactions, and delete expense records through a dynamic dashboard.
+
+## 🚀 Improvements Made This Week
+
+The following improvements were implemented:
+
+- Created an interactive expense entry form.
+- Added a dynamic budget summary showing total budget, total expenses, and remaining balance.
+- Added six budget categories: Food & Dining, Transport, Rent & Housing, Entertainment, Savings Goal, and Utilities.
+- Implemented automatic expense calculations.
+- Added budget status messages to identify spending levels.
+- Created a dynamic transaction list.
+- Added the ability to delete expense records.
+- Implemented transaction search functionality.
+- Improved the dashboard to display information directly on the webpage.
+
+## 💻 JavaScript Concepts Implemented
+
+### 1. Decision Making (Conditionals)
+
+Conditional statements (`if`, `else if`, and `else`) are used to evaluate spending and provide appropriate feedback.
+
+For example:
+- If spending exceeds the category budget, the application displays an Over Budget warning.
+- If the budget is fully used, it displays Budget Used.
+- If spending reaches 80% of the budget, it displays Almost Full.
+- Otherwise, it displays On Track.
+
+### 2. Arrays - Managing Multiple Records
+
+JavaScript arrays are used to store and manage multiple expense records.
+
+The `expenses` array stores expense information, including:
+- Expense name
+- Expense amount
+- Expense category
+
+The `budgets` array stores budget categories, their spending limits, current spending amounts, and icons.
+
+This makes it possible to manage multiple records instead of relying on individual variables.
+
+### 3. Loops - Processing Data
+
+The `forEach()` method is used to process stored records.
+
+Loops are used to:
+- Calculate total expenses.
+- Calculate the total budget.
+- Display budget categories.
+- Display transaction records.
+
+This allows the application to process multiple records efficiently.
+
+### 4. DOM Manipulation - Dynamic Dashboard
+
+The Document Object Model (DOM) is used to update webpage content dynamically.
+
+JavaScript methods include:
+- `getElementById()` to select HTML elements.
+- `textContent` to update dashboard figures and messages.
+- `innerHTML` to display budget cards and transactions.
+- `createElement()` to create new webpage elements.
+- `appendChild()` to add elements to the webpage.
+
+The dashboard updates automatically when users add or delete expenses.
+
+### 5. Event Listeners - User Interactions
+
+Event listeners allow users to interact with SpendWise.
+
+The application uses:
+- `submit` event to add new expenses.
+- `click` event to delete expense records.
+- `input` event to search transactions.
+
+These events connect user actions with JavaScript functionality and dashboard updates.
+
+### 6. Connecting Everything Together
+
+SpendWise demonstrates how different JavaScript concepts work together.
+
+When a user submits an expense:
+1. JavaScript captures the form information.
+2. The expense is validated.
+3. The expense is added to the expenses array.
+4. The selected budget category is updated.
+5. JavaScript calculates the new totals.
+6. The DOM updates the dashboard and transaction list.
+
+## 🛠️ Technologies Used
+
+- HTML5 - Application structure.
+- CSS3 - Styling and responsive dashboard design.
+- JavaScript - Application logic and interactivity.
+- Visual Studio Code - Code editor.
+- Git and GitHub - Version control and project hosting.
+
+## ⚠️ Challenges Encountered and Solutions
+
+**1. Updating dashboard information**
+
+Challenge: Displaying calculated information directly on the webpage instead of only using the browser console.
+
+Solution: Used DOM manipulation methods such as `textContent` and `appendChild()`.
+
+**2. Managing multiple expense records**
+
+Challenge: Managing several expenses without creating individual variables for each record.
+
+Solution: Used JavaScript arrays to store and manage expense information.
+
+**3. Calculating budget information**
+
+Challenge: Keeping total expenses and remaining balances accurate after user interactions.
+
+Solution: Created reusable functions and loops to calculate totals whenever records change.
+
+**4. Handling user interactions**
+
+Challenge: Connecting form submissions and button clicks to the application logic.
+
+Solution: Used event listeners to handle adding, deleting, and searching expenses.
+
+## ▶️ How to Run the Project
+
+1. Download or clone the SpendWise repository.
+2. Open the project folder in Visual Studio Code.
+3. Open `index.html` in a web browser.
+4. Enter an expense name, amount, and category.
+5. Click Add Expense.
+6. View the updated dashboard and transaction records.
+7. Use the search box to find expenses or the Delete button to remove a record.
+
+## 📁 Project Structure
+
+```text
+SpendWise/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+```
+
+## 🎯 Conclusion
+
+Week 6 improved SpendWise by introducing JavaScript decision making, arrays, loops, DOM manipulation, and event handling.
+
+The project demonstrates how HTML, CSS, and JavaScript work together to create an interactive budgeting application.
+
+**Project: SpendWise Budget Tracker**  
+**Course: Power Learn Project (PLP)**  
+**Assignment: Week 6 - Make SpendWise Interactive**
